@@ -14,7 +14,7 @@ Support for variable numbers of arguments:
     l("(...) -> arg.n")(1,2,3,4)
     => 4
 
-Use it with [my fork of underscore.lua](https://github.com/mkilling/underscore.lua) for extra awesome:
+Use it with [my fork of underscore.lua](https://github.com/mkilling/underscore.lua/tree/develop) for extra awesome:
 
     _ = require("underscore")
     l = require("lambda")
