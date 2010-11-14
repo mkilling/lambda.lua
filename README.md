@@ -18,10 +18,9 @@ Use it with [my fork of underscore.lua](https://github.com/mkilling/underscore.l
 
     _ = require("underscore")
     l = require("lambda")
-    vector = {}
-    vector.add = l("(...) -> _(arg):chain():pluck_all():map(_.sum):value()")
+    add = l("(...) -> _(arg):chain():pluck_all():map(_.sum):value()")
 
-    local vec1 = {100, 50, 20}
-    local vec2 = {20, 20, 0}
+    local vector1 = {100, 50, 20}
+    local vector2 = {20, 20, 0}
     add(vec1, vec2)
     => {120, 70, 20}
