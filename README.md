@@ -22,5 +22,5 @@ Use it with [my fork of underscore.lua](https://github.com/mkilling/underscore.l
 
     local vector1 = {100, 50, 20}
     local vector2 = {20, 20, 0}
-    add(vec1, vec2)
+    add(vector1, vector2)
     => {120, 70, 20}
