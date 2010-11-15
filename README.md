@@ -1,5 +1,5 @@
 # lambda.lua
-Terse lambda definitions for Lua. Best used in combination with [underscore.lua](https://github.com/mirven/underscore.lua).
+Terse lambda definitions for Lua. Best used in combination with [underscore.lua](https://github.com/mirven/underscore.lua).  
 **Attention:** functions defined in this fashion cannot access the lexical scope in which they are defined.
 
 ## Usage
