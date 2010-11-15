@@ -1,5 +1,6 @@
 # lambda.lua
 Terse lambda definitions for Lua. Best used in combination with [underscore.lua](https://github.com/mirven/underscore.lua).
+**Attention:** functions defined in this fashion cannot access the lexical scope in which they are defined.
 
 ## Usage
 Define your lambda functions like this:
@@ -24,3 +25,9 @@ Use it with [my fork of underscore.lua](https://github.com/mkilling/underscore.l
     local vector2 = {20, 20, 0}
     add(vector1, vector2)
     => {120, 70, 20}
+
+**Accessing scope outside of the lambda won't work:**
+
+    local myvar = "outer scope"
+    l("() -> myvar")()
+    => nil
